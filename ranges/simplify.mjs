@@ -4,7 +4,7 @@
 // const satisfies = require('../functions/satisfies.js')
 import satisfies from '../functions/satisfies.mjs'
 // const compare = require('../functions/compare.js')
-import compare from '../functions/compare.mjs.mjs'
+import compare from '../functions/compare.mjs'
 // module.exports = 
 export default (versions, range, options) => {
   const set = []

@@ -4,8 +4,9 @@ import { MAX_LENGTH } from '../internal/constants.mjs'
 import { re, t } from '../internal/re.mjs'
 // const SemVer = require('../classes/semver')
 import SemVer from '../classes/semver.mjs'
+// const parseOptions = require('../internal/parse-options')
+import parseOptions from '../internal/parse-options.mjs'
 
-const parseOptions = require('../internal/parse-options.mjs')
 const parse = (version, options) => {
   options = parseOptions(options)
 
