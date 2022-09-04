@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@types/semver": "^7.3.12",
-    "lru-cache": "^6.0.0"
+    "lru-cache": "^7.14.0"
   },
   "author": "Imtaotao",
   "templateOSS": {
