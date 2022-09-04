@@ -1,5 +1,5 @@
 semver(1) -- The semantic versioner for npm
-> This is esModule version (frok from v7.3.7)
+> This is esModule version (fork from v7.3.7)
 ===========================================
 
 ## Install
