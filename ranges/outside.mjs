@@ -7,7 +7,7 @@ const { ANY } = Comparator
 import Range from '../classes/range.mjs'
 
 // const satisfies = require('../functions/satisfies')
-import satisfies from '../functions/satisfies.mjsv'
+import satisfies from '../functions/satisfies.mjs'
 // const gt = require('../functions/gt')
 import gt from '../functions/gt.mjs'
 // const lt = require('../functions/lt')

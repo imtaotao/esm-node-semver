@@ -1,6 +1,6 @@
 {
   "name": "esm-semver",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The semantic version parser used by npm.",
   "main": "index.mjs",
   "types": "index.d.ts",
