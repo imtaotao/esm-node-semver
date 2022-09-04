@@ -1,6 +1,6 @@
 {
   "name": "esm-semver",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "The semantic version parser used by npm.",
   "main": "index.mjs",
   "types": "index.d.ts",
@@ -26,7 +26,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/esm-node-semver.git"
+    "url": "https://github.com/imtaotao/esm-node-semver.git"
   },
   "bin": {
     "semver": "bin/semver.js"
