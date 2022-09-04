@@ -1,0 +1,78 @@
+{
+  "name": "esm-semver",
+  "version": "0.0.1",
+  "description": "The semantic version parser used by npm.",
+  "main": "index.mjs",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "tap",
+    "snap": "tap",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "postpublish": "git push origin --follow-tags",
+    "lint": "eslint \"**/*.js\"",
+    "postlint": "template-oss-check",
+    "lintfix": "npm run lint -- --fix",
+    "prepublishOnly": "git push origin --follow-tags",
+    "posttest": "npm run lint",
+    "template-oss-apply": "template-oss-apply --force"
+  },
+  "devDependencies": {
+    "@npmcli/eslint-config": "^3.0.1",
+    "@npmcli/template-oss": "3.6.0",
+    "opener": "^1.5.2",
+    "tap": "^16.0.0"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/esm-node-semver.git"
+  },
+  "bin": {
+    "semver": "bin/semver.mjs"
+  },
+  "files": [
+    "bin/",
+    "classes/",
+    "functions/",
+    "internal/",
+    "ranges/",
+    "index.mjs",
+    "preload.mjs",
+    "range.bnf"
+  ],
+  "tap": {
+    "check-coverage": true,
+    "coverage-map": "map.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@types/semver": "^7.3.12",
+    "lru-cache": "^6.0.0"
+  },
+  "author": "Imtaotao",
+  "templateOSS": {
+    "//@npmcli/template-oss": "This file is partially managed by @npmcli/template-oss. Edits may be overwritten.",
+    "version": "3.6.0",
+    "engines": ">=10",
+    "ciVersions": [
+      "10.0.0",
+      "10.x",
+      "12.x",
+      "14.x",
+      "16.x"
+    ],
+    "distPaths": [
+      "bin/",
+      "classes/",
+      "functions/",
+      "internal/",
+      "ranges/",
+      "index.mjs",
+      "preload.mjs",
+      "range.bnf"
+    ]
+  }
+}
