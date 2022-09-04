@@ -1,6 +1,6 @@
 {
   "name": "esm-semver",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The semantic version parser used by npm.",
   "main": "index.mjs",
   "types": "index.d.ts",
@@ -29,7 +29,7 @@
     "url": "https://github.com/npm/esm-node-semver.git"
   },
   "bin": {
-    "semver": "bin/semver.mjs"
+    "semver": "bin/semver.js"
   },
   "files": [
     "bin/",
@@ -38,7 +38,6 @@
     "internal/",
     "ranges/",
     "index.mjs",
-    "preload.mjs",
     "index.d.ts",
     "range.bnf"
   ],
@@ -72,7 +71,6 @@
       "internal/",
       "ranges/",
       "index.mjs",
-      "preload.mjs",
       "range.bnf"
     ]
   }

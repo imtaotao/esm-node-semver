@@ -1,7 +1,7 @@
 (async () => {
   const t = require('tap')
-  const subset = (await import('../../ranges/subset.js')).default
-  const Range = (await import('../../classes/range')).default
+  const subset = (await import('../../ranges/subset.mjs')).default
+  const Range = (await import('../../classes/range.mjs')).default
 
   // sub, dom, expect, [options]
   const cases = [

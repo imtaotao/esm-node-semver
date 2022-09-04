@@ -1,8 +1,8 @@
 (async () => {
   const { test } = require('tap')
-  const coerce = (await import('../../functions/coerce')).default
-  const parse = (await import('../../functions/parse')).default
-  const valid = (await import('../../functions/valid')).default
+  const coerce = (await import('../../functions/coerce.mjs')).default
+  const parse = (await import('../../functions/parse.mjs')).default
+  const valid = (await import('../../functions/valid.mjs')).default
 
   test('coerce tests', (t) => {
     // Expected to be null (cannot be coerced).

@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const gtr = (await import('../../ranges/gtr')).default
+  const gtr = (await import('../../ranges/gtr.mjs')).default
   const versionGtr = require('../fixtures/version-gt-range')
   const versionNotGtr = require('../fixtures/version-not-gt-range')
 

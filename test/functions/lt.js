@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const lt = (await import('../../functions/lt')).default
+  const lt = (await import('../../functions/lt.mjs')).default
   const comparisons = require('../fixtures/comparisons.js')
   const equality = require('../fixtures/equality.js')
 

@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const minSatisfying = (await import('../../ranges/min-satisfying')).default
+  const minSatisfying = (await import('../../ranges/min-satisfying.mjs')).default
 
   test('min satisfying', (t) => {
     [[['1.2.3', '1.2.4'], '1.2', '1.2.3'],

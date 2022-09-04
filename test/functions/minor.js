@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const minor = (await import('../../functions/minor')).default
+  const minor = (await import('../../functions/minor.mjs')).default
 
   test('minor tests', (t) => {
     // [range, version]

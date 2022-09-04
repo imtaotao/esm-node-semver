@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const rcompare = (await import('../../functions/rcompare')).default
+  const rcompare = (await import('../../functions/rcompare.mjs')).default
 
   test('rcompare', (t) => {
     t.equal(rcompare('1.0.0', '1.0.1'), 1)

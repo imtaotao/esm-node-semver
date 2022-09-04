@@ -1,6 +1,6 @@
 (async () => {
   const t = require('tap')
-  const constants = (await import('../../internal/constants')).default
+  const constants = await import('../../internal/constants.mjs')
 
   t.match(constants, {
     SEMVER_SPEC_VERSION: String,

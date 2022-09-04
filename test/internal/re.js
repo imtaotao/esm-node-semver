@@ -1,7 +1,7 @@
 (async () => {
   const { test } = require('tap')
-  const { src, re } = await import('../../internal/re')
-  const semver = (await import('../../')).default
+  const { src, re } = await import('../../internal/re.mjs')
+  const semver = (await import('../../index.mjs')).default
 
   test('has a list of src, re, and tokens', (t) => {
     t.match(Object.assign({}, semver), {

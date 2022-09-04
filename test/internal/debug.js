@@ -33,11 +33,10 @@
     })
     t.end()
   }
-  
+
   if (process.argv[2] === 'child') {
-    (await import('../../internal/debug')).default('hello, world')
+    (await import('../../internal/debug.mjs')).default('hello, world')
   } else {
     main()
   }
 })()
-

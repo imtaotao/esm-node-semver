@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const clean = (await import('../../functions/clean')).default
+  const clean = (await import('../../functions/clean.mjs')).default
 
   test('clean tests', (t) => {
     // [range, version]

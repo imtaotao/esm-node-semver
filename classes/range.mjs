@@ -198,13 +198,13 @@ import LRU from 'lru-cache'
 const cache = new LRU({ max: 1000 })
 
 // const parseOptions = require('../internal/parse-options')
-import parseOptions from '../internal/parse-options'
+import parseOptions from '../internal/parse-options.mjs'
 // const Comparator = require('./comparator')
-import Comparator from './comparator'
+import Comparator from './comparator.mjs'
 // const debug = require('../internal/debug')
-import debug from '../internal/debug'
+import debug from '../internal/debug.mjs'
 // const SemVer = require('./semver')
-import SemVer from './semver'
+import SemVer from './semver.mjs'
 // const {
 //   re,
 //   t,
@@ -218,7 +218,7 @@ import {
   comparatorTrimReplace,
   tildeTrimReplace,
   caretTrimReplace,
-} from '../internal/re'
+} from '../internal/re.mjs'
 
 const isNullSet = c => c.value === '<0.0.0-0'
 const isAny = c => c.value === ''

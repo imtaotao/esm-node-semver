@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const gte = (await import('../../functions/gte')).default
+  const gte = (await import('../../functions/gte.mjs')).default
   const comparisons = require('../fixtures/comparisons.js')
   const equality = require('../fixtures/equality.js')
 

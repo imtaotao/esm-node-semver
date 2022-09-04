@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const outside = (await import('../../ranges/outside')).default
+  const outside = (await import('../../ranges/outside.mjs')).default
   const versionGtr = require('../fixtures/version-gt-range')
   const versionNotGtr = require('../fixtures/version-not-gt-range')
   const versionLtr = require('../fixtures/version-lt-range')
@@ -53,4 +53,3 @@
     t.end()
   })
 })()
-

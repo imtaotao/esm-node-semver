@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const validRange = (await import('../../ranges/valid')).default
+  const validRange = (await import('../../ranges/valid.mjs')).default
   const rangeParse = require('../fixtures/range-parse.js')
 
   test('valid range test', (t) => {

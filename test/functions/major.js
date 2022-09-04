@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const major = (await import('../../functions/major')).default
+  const major = (await import('../../functions/major.mjs')).default
 
   test('major tests', (t) => {
     // [range, version]
@@ -25,4 +25,3 @@
     t.end()
   })
 })()
-

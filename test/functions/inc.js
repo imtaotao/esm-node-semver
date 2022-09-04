@@ -1,7 +1,7 @@
 (async () => {
   const { test } = require('tap')
-  const inc = (await import('../../functions/inc')).default
-  const parse = (await import('../../functions/parse')).default
+  const inc = (await import('../../functions/inc.mjs')).default
+  const parse = (await import('../../functions/parse.mjs')).default
   const increments = require('../fixtures/increments.js')
 
   test('increment versions test', (t) => {
@@ -37,4 +37,3 @@
     t.end()
   })
 })()
-

@@ -1,6 +1,9 @@
 // none of these are semvers
 // [value, reason, opt]
-const { MAX_LENGTH, MAX_SAFE_INTEGER } = require('../../internal/constants')
+// const { MAX_LENGTH, MAX_SAFE_INTEGER } = require('../../internal/constants')
+const MAX_LENGTH = 256
+const MAX_SAFE_INTEGER = Number.MAX_SAFE_INTEGER || 9007199254740991
+
 module.exports = [
   [new Array(MAX_LENGTH).join('1') + '.0.0', 'too long'],
   [`${MAX_SAFE_INTEGER}0.0.0`, 'too big'],

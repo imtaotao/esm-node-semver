@@ -1,4 +1,1 @@
-module.exports = testFile => {
-  console.log(testFile, testFile.replace(/test\//, '').replace('.js', '.mjs'));
-  return testFile.replace(/test\//, '').replace('.js', '.mjs')
-}
+module.exports = testFile => testFile.replace(/test\//, '').replace('.js', '').replace('.mjs', '')

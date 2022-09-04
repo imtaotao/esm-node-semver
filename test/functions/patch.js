@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const patch = (await import('../../functions/patch')).default
+  const patch = (await import('../../functions/patch.mjs')).default
 
   test('patch tests', (t) => {
     // [range, version]

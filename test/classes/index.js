@@ -6,4 +6,3 @@
     Comparator: (await import('../../classes/comparator.mjs')).default,
   }, 'export all classes at semver/classes')
 })()
-

@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const neq = (await import('../../functions/neq')).default
+  const neq = (await import('../../functions/neq.mjs')).default
   const comparisons = require('../fixtures/comparisons.js')
   const equality = require('../fixtures/equality.js')
 
@@ -26,4 +26,3 @@
     }))
   })
 })()
-

@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const ltr = (await import('../../ranges/ltr')).default
+  const ltr = (await import('../../ranges/ltr.mjs')).default
   const versionLtr = require('../fixtures/version-lt-range')
   const versionNotLtr = require('../fixtures/version-not-lt-range')
 

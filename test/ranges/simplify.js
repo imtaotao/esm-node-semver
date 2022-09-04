@@ -1,6 +1,6 @@
 (async () => {
-  const simplify = (await import('../../ranges/simplify.js')).default
-  const Range = (await import('../../classes/range.js')).default
+  const simplify = (await import('../../ranges/simplify.mjs')).default
+  const Range = (await import('../../classes/range.mjs')).default
   const t = require('tap')
   const versions = [
     '1.0.0',
@@ -42,4 +42,3 @@
   t.equal(simplify(versions, '1 || 2 || 3'), '*')
   t.equal(simplify(versions, '2.1 || 2.2 || 2.3'), '2.1.0 - 2.3.1')
 })()
-

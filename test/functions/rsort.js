@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const rsort = (await import('../../functions/rsort')).default
+  const rsort = (await import('../../functions/rsort.mjs')).default
 
   test('sorting', (t) => {
     const list = [

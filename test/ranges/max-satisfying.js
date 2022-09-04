@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const maxSatisfying = (await import('../../ranges/max-satisfying')).default
+  const maxSatisfying = (await import('../../ranges/max-satisfying.mjs')).default
 
   test('max satisfying', (t) => {
     [[['1.2.3', '1.2.4'], '1.2', '1.2.4'],

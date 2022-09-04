@@ -1,6 +1,6 @@
 (async () => {
   const t = require('tap')
-  const parseOptions = (await import('../../internal/parse-options.js')).default
+  const parseOptions = (await import('../../internal/parse-options.mjs')).default
 
   t.test('falsey values always empty options object', t => {
     t.strictSame(parseOptions(null), {})

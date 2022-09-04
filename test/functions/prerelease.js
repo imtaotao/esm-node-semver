@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const prerelease = (await import('../../functions/prerelease')).default
+  const prerelease = (await import('../../functions/prerelease.mjs')).default
 
   test('prerelease', (t) => {
     // [prereleaseParts, version, loose]

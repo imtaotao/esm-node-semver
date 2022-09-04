@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const { compareIdentifiers, rcompareIdentifiers } = await import('../../internal/identifiers')
+  const { compareIdentifiers, rcompareIdentifiers } = await import('../../internal/identifiers.mjs')
 
   test('rcompareIdentifiers and compareIdentifiers', (t) => {
     const set = [
@@ -19,4 +19,3 @@
     t.end()
   })
 })()
-

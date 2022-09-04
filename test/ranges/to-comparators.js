@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const toComparators = (await import('../../ranges/to-comparators')).default
+  const toComparators = (await import('../../ranges/to-comparators.mjs')).default
 
   test('comparators test', (t) => {
     // [range, comparators]
@@ -87,4 +87,3 @@
     t.end()
   })
 })()
-

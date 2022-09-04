@@ -1,9 +1,9 @@
 (async () => {
   const { test } = require('tap')
-  const compare = (await import('../../functions/compare.js')).default
+  const compare = (await import('../../functions/compare.mjs')).default
   const comparisons = require('../fixtures/comparisons.js')
   const equality = require('../fixtures/equality.js')
-  const SemVer = (await import('../../classes/semver.js')).default
+  const SemVer = (await import('../../classes/semver.mjs')).default
 
   test('comparison tests', t => {
     t.plan(comparisons.length)

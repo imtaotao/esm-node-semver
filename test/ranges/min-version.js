@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const minVersion = (await import('../../ranges/min-version')).default
+  const minVersion = (await import('../../ranges/min-version.mjs')).default
 
   test('minimum version in range tests', (t) => {
     // [range, minimum, loose]
@@ -79,4 +79,3 @@
     t.end()
   })
 })()
-

@@ -1,7 +1,7 @@
 (async () => {
   const t = require('tap')
-  const valid = (await import('../../functions/valid')).default
-  const SemVer = (await import('../../classes/semver')).default
+  const valid = (await import('../../functions/valid.mjs')).default
+  const SemVer = (await import('../../classes/semver.mjs')).default
   const invalidVersions = require('../fixtures/invalid-versions')
 
   t.test('returns null instead of throwing when presented with garbage', t => {

@@ -1,8 +1,8 @@
 (async () => {
   const { test } = require('tap')
-  const compareLoose = (await import('../../functions/compare-loose')).default
-  const SemVer = (await import('../../classes/semver')).default
-  const eq = (await import('../../functions/eq')).default
+  const compareLoose = (await import('../../functions/compare-loose.mjs')).default
+  const SemVer = (await import('../../classes/semver.mjs')).default
+  const eq = (await import('../../functions/eq.mjs')).default
 
   test('strict vs loose version numbers', (t) => {
     [['=1.2.3', '1.2.3'],

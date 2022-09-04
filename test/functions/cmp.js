@@ -1,9 +1,9 @@
 (async () => {
   const { test } = require('tap')
-  const cmp = (await import('../../functions/cmp')).default
+  const cmp = (await import('../../functions/cmp.mjs')).default
   const comparisons = require('../fixtures/comparisons.js')
   const equality = require('../fixtures/equality.js')
-  const SemVer = require('../../classes/semver')
+  const SemVer = (await import('../../classes/semver.mjs')).default
 
   test('invalid cmp usage', (t) => {
     t.throws(() => {

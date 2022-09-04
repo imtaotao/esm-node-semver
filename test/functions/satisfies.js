@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const satisfies = (await import('../../functions/satisfies')).default
+  const satisfies = (await import('../../functions/satisfies.mjs')).default
   const rangeInclude = require('../fixtures/range-include.js')
   const rangeExclude = require('../fixtures/range-exclude.js')
   test('range tests', t => {

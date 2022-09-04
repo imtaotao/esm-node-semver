@@ -27,7 +27,6 @@
 !/index.mjs
 !/internal/
 !/package.json
-!/preload.mjs
 !/range.bnf
 !/ranges/
 !/index.d.ts

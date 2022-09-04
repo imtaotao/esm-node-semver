@@ -1,6 +1,6 @@
 (async () => {
   const { test } = require('tap')
-  const diff = (await import('../../functions/diff')).default
+  const diff = (await import('../../functions/diff.mjs')).default
 
   test('diff versions test', (t) => {
   //  [version1, version2, result]

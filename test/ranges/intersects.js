@@ -1,8 +1,8 @@
 (async () => {
   const { test } = require('tap')
-  const intersects = (await import('../../ranges/intersects')).default
-  const Range = (await import('../../classes/range')).default
-  const Comparator = (await import('../../classes/comparator')).default
+  const intersects = (await import('../../ranges/intersects.mjs')).default
+  const Range = (await import('../../classes/range.mjs')).default
+  const Comparator = (await import('../../classes/comparator.mjs')).default
   const comparatorIntersection = require('../fixtures/comparator-intersection.js')
   const rangeIntersection = require('../fixtures/range-intersection.js')
 
