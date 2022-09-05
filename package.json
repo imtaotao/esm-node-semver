@@ -1,6 +1,6 @@
 {
   "name": "esm-semver",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "The semantic version parser used by npm.",
   "main": "index.mjs",
   "types": "index.d.ts",
@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@types/semver": "^7.3.12",
-    "lru-cache": "^6.0.0"
+    "lru-cache": "^7.0.0"
   },
   "author": "Imtaotao",
   "templateOSS": {
