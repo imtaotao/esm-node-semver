@@ -11,7 +11,7 @@ npm install esm-semver
 
 ## Usage
 
-As a node module:
+As a node esm module:
 
 ```js
 import semver from 'esm-semver'
@@ -38,50 +38,50 @@ import semver from 'esm-semver'
 // all of them listed here, just pick and choose what you want
 
 // classes
-import SemVer from 'semver/classes/semver'
-import Comparator from 'semver/classes/comparator'
-import Range from 'semver/classes/range')
+import SemVer from 'esm-semver/classes/semver.mjs'
+import Comparator from 'esm-semver/classes/comparator.mjs'
+import Range from 'esm-semver/classes/range.mjs')
 
 // functions for working with versions
-import semverParse from 'semver/functions/parse'
-import semverValid from 'semver/functions/valid'
-import semverClean from 'semver/functions/clean'
-import semverInc from 'semver/functions/inc'
-import semverDiff from 'semver/functions/diff'
-import semverMajor from 'semver/functions/major'
-import semverMinor from 'semver/functions/minor'
-import semverPatch from 'semver/functions/patch'
-import semverPrerelease from 'semver/functions/prerelease'
-import semverCompare from 'semver/functions/compare'
-import semverRcompare from 'semver/functions/rcompare'
-import semverCompareLoose from 'semver/functions/compare-loose'
-import semverCompareBuild from 'semver/functions/compare-build'
-import semverSort from 'semver/functions/sort'
-import semverRsort from 'semver/functions/rsort'
+import semverParse from 'esm-semver/functions/parse.mjs'
+import semverValid from 'esm-semver/functions/valid.mjs'
+import semverClean from 'esm-semver/functions/clean.mjs'
+import semverInc from 'esm-semver/functions/inc.mjs'
+import semverDiff from 'esm-semver/functions/diff.mjs'
+import semverMajor from 'esm-semver/functions/major.mjs'
+import semverMinor from 'esm-semver/functions/minor.mjs'
+import semverPatch from 'esm-semver/functions/patch.mjs'
+import semverPrerelease from 'esm-semver/functions/prerelease.mjs'
+import semverCompare from 'esm-semver/functions/compare.mjs'
+import semverRcompare from 'esm-semver/functions/rcompare.mjs'
+import semverCompareLoose from 'esm-semver/functions/compare-loose.mjs'
+import semverCompareBuild from 'esm-semver/functions/compare-build.mjs'
+import semverSort from 'esm-semver/functions/sort.mjs'
+import semverRsort from 'esm-semver/functions/rsort.mjs'
 
 // low-level comparators between versions
-import semverGt from 'semver/functions/gt'
-import semverLt from 'semver/functions/lt'
-import semverEq from 'semver/functions/eq'
-import semverNeq from 'semver/functions/neq'
-import semverGte from 'semver/functions/gte'
-import semverLte from 'semver/functions/lte'
-import semverCmp from 'semver/functions/cmp'
-import semverCoerce from 'semver/functions/coerce'
+import semverGt from 'esm-semver/functions/gt.mjs'
+import semverLt from 'esm-semver/functions/lt.mjs'
+import semverEq from 'esm-semver/functions/eq.mjs'
+import semverNeq from 'esm-semver/functions/neq.mjs'
+import semverGte from 'esm-semver/functions/gte.mjs'
+import semverLte from 'esm-semver/functions/lte.mjs'
+import semverCmp from 'esm-semver/functions/cmp.mjs'
+import semverCoerce from 'esm-semver/functions/coerce.mjs'
 
 // working with ranges
-import semverSatisfies from 'semver/functions/satisfies'
-import semverMaxSatisfying from 'semver/ranges/max-satisfying'
-import semverMinSatisfying from 'semver/ranges/min-satisfying'
-import semverToComparators from 'semver/ranges/to-comparators'
-import semverMinVersion from 'semver/ranges/min-version'
-import semverValidRange from 'semver/ranges/valid'
-import semverOutside from 'semver/ranges/outside'
-import semverGtr from 'semver/ranges/gtr'
-import semverLtr from 'semver/ranges/ltr'
-import semverIntersects from 'semver/ranges/intersects'
-import simplifyRange from 'semver/ranges/simplify'
-import rangeSubset from 'semver/ranges/subset'
+import semverSatisfies from 'esm-semver/functions/satisfies.mjs'
+import semverMaxSatisfying from 'esm-semver/ranges/max-satisfying.mjs'
+import semverMinSatisfying from 'esm-semver/ranges/min-satisfying.mjs'
+import semverToComparators from 'esm-semver/ranges/to-comparators.mjs'
+import semverMinVersion from 'esm-semver/ranges/min-version.mjs'
+import semverValidRange from 'esm-semver/ranges/valid.mjs'
+import semverOutside from 'esm-semver/ranges/outside.mjs'
+import semverGtr from 'esm-semver/ranges/gtr.mjs'
+import semverLtr from 'esm-semver/ranges/ltr.mjs'
+import semverIntersects from 'esm-semver/ranges/intersects.mjs'
+import simplifyRange from 'esm-semver/ranges/simplify.mjs'
+import rangeSubset from 'esm-semver/ranges/subset.mjs'
 ```
 
 As a command-line utility:
@@ -531,40 +531,40 @@ of the API that are used.
 The following modules are available:
 
 * `import('semver')`
-* `import('semver/classes')`
-* `import('semver/classes/comparator')`
-* `import('semver/classes/range')`
-* `import('semver/classes/semver')`
-* `import('semver/functions/clean')`
-* `import('semver/functions/cmp')`
-* `import('semver/functions/coerce')`
-* `import('semver/functions/compare')`
-* `import('semver/functions/compare-build')`
-* `import('semver/functions/compare-loose')`
-* `import('semver/functions/diff')`
-* `import('semver/functions/eq')`
-* `import('semver/functions/gt')`
-* `import('semver/functions/gte')`
-* `import('semver/functions/inc')`
-* `import('semver/functions/lt')`
-* `import('semver/functions/lte')`
-* `import('semver/functions/major')`
-* `import('semver/functions/minor')`
-* `import('semver/functions/neq')`
-* `import('semver/functions/parse')`
-* `import('semver/functions/patch')`
-* `import('semver/functions/prerelease')`
-* `import('semver/functions/rcompare')`
-* `import('semver/functions/rsort')`
-* `import('semver/functions/satisfies')`
-* `import('semver/functions/sort')`
-* `import('semver/functions/valid')`
-* `import('semver/ranges/gtr')`
-* `import('semver/ranges/intersects')`
-* `import('semver/ranges/ltr')`
-* `import('semver/ranges/max-satisfying')`
-* `import('semver/ranges/min-satisfying')`
-* `import('semver/ranges/min-version')`
-* `import('semver/ranges/outside')`
-* `import('semver/ranges/to-comparators')`
-* `import('semver/ranges/valid')`
+* `import('esm-semver/classes/index.mjs')`
+* `import('esm-semver/classes/comparator.mjs')`
+* `import('esm-semver/classes/range.mjs')`
+* `import('esm-semver/classes/semver.mjs')`
+* `import('esm-semver/functions/clean.mjs')`
+* `import('esm-semver/functions/cmp.mjs')`
+* `import('esm-semver/functions/coerce.mjs')`
+* `import('esm-semver/functions/compare.mjs')`
+* `import('esm-semver/functions/compare-build.mjs')`
+* `import('esm-semver/functions/compare-loose.mjs')`
+* `import('esm-semver/functions/diff.mjs')`
+* `import('esm-semver/functions/eq.mjs')`
+* `import('esm-semver/functions/gt.mjs')`
+* `import('esm-semver/functions/gte.mjs')`
+* `import('esm-semver/functions/inc.mjs')`
+* `import('esm-semver/functions/lt.mjs')`
+* `import('esm-semver/functions/lte.mjs')`
+* `import('esm-semver/functions/major.mjs')`
+* `import('esm-semver/functions/minor.mjs')`
+* `import('esm-semver/functions/neq.mjs')`
+* `import('esm-semver/functions/parse.mjs')`
+* `import('esm-semver/functions/patch.mjs')`
+* `import('esm-semver/functions/prerelease.mjs')`
+* `import('esm-semver/functions/rcompare.mjs')`
+* `import('esm-semver/functions/rsort.mjs')`
+* `import('esm-semver/functions/satisfies.mjs')`
+* `import('esm-semver/functions/sort.mjs')`
+* `import('esm-semver/functions/valid.mjs')`
+* `import('esm-semver/ranges/gtr.mjs')`
+* `import('esm-semver/ranges/intersects.mjs')`
+* `import('esm-semver/ranges/ltr.mjs')`
+* `import('esm-semver/ranges/max-satisfying.mjs')`
+* `import('esm-semver/ranges/min-satisfying.mjs')`
+* `import('esm-semver/ranges/min-version.mjs')`
+* `import('esm-semver/ranges/outside.mjs')`
+* `import('esm-semver/ranges/to-comparators.mjs')`
+* `import('esm-semver/ranges/valid.mjs')`
