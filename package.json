@@ -27,7 +27,7 @@
     "tap": "^16.0.0",
     "rollup": "^2.67.2",
     "rollup-plugin-cleanup": "^3.2.1",
-    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-commonjs": "^23.0.3",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.1.3"
   },
