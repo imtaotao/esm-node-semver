@@ -1,6 +1,7 @@
 import path from 'path';
 import json from '@rollup/plugin-json';
 import cleanup from 'rollup-plugin-cleanup';
+import { babel } from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
@@ -38,6 +39,11 @@ function createConfig(format, output) {
       }),
       nodeResolve({ browser: isUmdBuild }),
       commonjs({ sourceMap: false }),
+      babel({
+        presets: [
+          '@babel/preset-env',
+        ],
+      }),
     ],
   };
 }
